@@ -74,10 +74,10 @@ void setup()
     digitalWrite(gpio_switch, DEFAULT_POWER_MODE);
 
     Node my_node;
-    my_node = RMaker.initNode("ESP RainMaker Node");
+    my_node = RMaker.initNode("Mining Rig Node");
 
     //Initialize switch device
-    my_switch = Switch("Switch", &gpio_switch);
+    my_switch = Switch("Reset Switch", &gpio_switch);
 
     //Standard switch device
     my_switch.addCb(write_callback);
